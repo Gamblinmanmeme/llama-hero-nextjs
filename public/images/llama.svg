@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Llama body -->
+  <rect x="100" y="150" width="300" height="300" rx="30" ry="30" fill="white" stroke="black" stroke-width="8"/>
+  
+  <!-- Llama head and neck -->
+  <rect x="180" y="50" width="140" height="180" rx="70" ry="70" fill="white" stroke="black" stroke-width="8"/>
+  
+  <!-- Llama ears -->
+  <path d="M170 80 Q150 30 180 60" fill="white" stroke="black" stroke-width="8"/>
+  <path d="M330 80 Q350 30 320 60" fill="white" stroke="black" stroke-width="8"/>
+  <ellipse cx="170" cy="70" rx="15" ry="25" fill="#ffb6c1" transform="rotate(-15 170 70)"/>
+  <ellipse cx="330" cy="70" rx="15" ry="25" fill="#ffb6c1" transform="rotate(15 330 70)"/>
+  
+  <!-- Llama face -->
+  <circle cx="250" cy="120" r="15" fill="black"/> <!-- nose -->
+  <path d="M230 140 Q250 150 270 140" fill="none" stroke="black" stroke-width="4"/> <!-- mouth -->
+  
+  <!-- Sunglasses -->
+  <rect x="180" y="90" width="140" height="30" rx="5" ry="5" fill="black"/>
+  <rect x="190" y="95" width="50" height="20" rx="5" ry="5" fill="#ff69b4" opacity="0.7"/>
+  <rect x="260" y="95" width="50" height="20" rx="5" ry="5" fill="#ff69b4" opacity="0.7"/>
+  
+  <!-- Colorful pattern on body -->
+  <rect x="130" y="200" width="40" height="40" rx="5" ry="5" fill="#ff69b4" transform="rotate(15 130 200)"/>
+  <rect x="190" y="240" width="35" height="35" rx="5" ry="5" fill="#4da6ff"/>
+  <rect x="250" y="220" width="30" height="30" rx="5" ry="5" fill="#ffa64d" transform="rotate(-15 250 220)"/>
+  <rect x="300" y="260" width="45" height="45" rx="5" ry="5" fill="#80bfff"/>
+  <rect x="230" y="280" width="35" height="35" rx="5" ry="5" fill="#cc99ff"/>
+  <rect x="330" y="190" width="40" height="40" rx="5" ry="5" fill="#ffff66" transform="rotate(45 330 190)"/>
+  
+  <!-- Llama legs -->
+  <rect x="140" y="450" width="30" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="8"/>
+  <rect x="200" y="450" width="30" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="8"/>
+  <rect x="270" y="450" width="30" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="8"/>
+  <rect x="330" y="450" width="30" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="8"/>
+  
+  <!-- Llama tail -->
+  <path d="M80 250 Q50 300 70 350" fill="#ff69b4" stroke="black" stroke-width="8"/>
+  <path d="M70 350 Q80 370 60 380" fill="#ff1493" stroke="black" stroke-width="8"/>
+</svg>
