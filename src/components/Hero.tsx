@@ -4,23 +4,16 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <div className="relative h-[600px] w-full">
-      {/* Hero image - using an external placeholder image */}
+      {/* Hero image - using the blue Silverado image */}
       <div 
         className="absolute inset-0 z-0"
       >
-        {/* Truck image */}
+        {/* Silverado image */}
         <div className="relative w-full h-full">
-          <Image
-            src="https://images.unsplash.com/photo-1571987502227-9231b837d92a?q=80&w=2070&auto=format&fit=crop"
-            alt="Pickup Truck"
-            fill
-            priority
-            className="object-cover"
-            unoptimized={true}
-          />
+          <div className="absolute inset-0 bg-[url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2024/trucks/silverado-1500/01-images/colorizer/2024-silverado-1500-zr2-gba-colorizer.jpg?imwidth=1200')] bg-cover bg-center"></div>
           
           {/* Overlay to ensure text is readable */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
         </div>
       </div>
       
