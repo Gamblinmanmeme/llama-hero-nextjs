@@ -4,18 +4,19 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <div className="relative h-[600px] w-full">
-      {/* Hero image - using the Silverado image as background */}
+      {/* Hero image - using an external placeholder image */}
       <div 
         className="absolute inset-0 z-0"
       >
-        {/* Silverado image */}
+        {/* Truck image */}
         <div className="relative w-full h-full">
           <Image
-            src="/silverado.jpg"
-            alt="Chevrolet Silverado"
+            src="https://images.unsplash.com/photo-1571987502227-9231b837d92a?q=80&w=2070&auto=format&fit=crop"
+            alt="Pickup Truck"
             fill
             priority
             className="object-cover"
+            unoptimized={true}
           />
           
           {/* Overlay to ensure text is readable */}
