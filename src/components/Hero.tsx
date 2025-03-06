@@ -3,16 +3,32 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <div className="relative h-[600px] w-full">
-      {/* Hero background with fallback color */}
+      {/* Hero background with multiple fallback approaches */}
       <div 
         className="absolute inset-0 z-0 bg-blue-800"
-        style={{
-          backgroundImage: "url('https://images.pexels.com/photos/3693967/pexels-photo-3693967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
-        }}
       >
+        {/* Method 1: CSS background image as a direct element */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('https://images.pexels.com/photos/3693967/pexels-photo-3693967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
+        
+        {/* Method 2: Regular img tag as fallback */}
+        <img 
+          src="https://images.pexels.com/photos/3693967/pexels-photo-3693967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Blue pickup truck"
+          className="absolute inset-0 w-full h-full object-cover opacity-0"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.style.opacity = '1';
+          }}
+        />
+        
         {/* Overlay to ensure text is readable */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
       </div>
