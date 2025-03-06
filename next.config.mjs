@@ -28,6 +28,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.chevrolet.com",
       },
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
     ],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
