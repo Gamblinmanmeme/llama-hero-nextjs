@@ -1,20 +1,20 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Hero() {
   return (
     <div className="relative h-[600px] w-full">
-      {/* Hero image - using the blue Silverado image */}
+      {/* Hero background with fallback color */}
       <div 
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 bg-blue-800"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1571987502227-9231b837d92a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
-        {/* Silverado image */}
-        <div className="relative w-full h-full">
-          <div className="absolute inset-0 bg-[url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2024/trucks/silverado-1500/01-images/colorizer/2024-silverado-1500-zr2-gba-colorizer.jpg?imwidth=1200')] bg-cover bg-center"></div>
-          
-          {/* Overlay to ensure text is readable */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
-        </div>
+        {/* Overlay to ensure text is readable */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
       </div>
       
       {/* Content overlay */}
