@@ -4,6 +4,7 @@ import InfoSection from '../components/InfoSection';
 import FeatureCard from '../components/FeatureCard';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import ImageExample from '../components/ImageExample';
 import { ShieldCheck, Scale, FileText, Clock, Car, Wrench } from 'lucide-react';
 
 export default function Home() {
@@ -11,6 +12,14 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      
+      {/* Image Testing Section */}
+      <section className="py-16 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Image Loading Solutions</h2>
+          <ImageExample />
+        </div>
+      </section>
       
       {/* What is a GM Buyback */}
       <InfoSection id="what-is" title="What is a GM Buyback?">
